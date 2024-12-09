@@ -65,3 +65,9 @@ PS C:\Users\azureuser\Desktop\webapp_test> .\ashuenv\Scripts\activate
 (ashuenv) PS C:\Users\azureuser\Desktop\webapp_test> 
 (ashuenv) PS C:\Users\azureuser\Desktop\webapp_test> 
 ```
+
+### Installing any package / lib in python using PIP 
+
+```
+pip  install  selenium 
+```
