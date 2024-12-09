@@ -51,3 +51,7 @@ ec2-user
 
 <img src="cloud1.png">
 
+### verify python and pip installation on windows using vscode 
+
+<img src="pyt.png">
+
