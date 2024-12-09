@@ -55,3 +55,13 @@ ec2-user
 
 <img src="pyt.png">
 
+### to use python coding best way to use venv 
+
+### creating venv in windows 
+
+```
+PS C:\Users\azureuser\Desktop\webapp_test> python  -m venv  ashuenv 
+PS C:\Users\azureuser\Desktop\webapp_test> .\ashuenv\Scripts\activate
+(ashuenv) PS C:\Users\azureuser\Desktop\webapp_test> 
+(ashuenv) PS C:\Users\azureuser\Desktop\webapp_test> 
+```
