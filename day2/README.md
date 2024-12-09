@@ -71,3 +71,11 @@ PS C:\Users\azureuser\Desktop\webapp_test> .\ashuenv\Scripts\activate
 ```
 pip  install  selenium 
 ```
+
+## welcome to microsoft azure cloud 
+
+### understanding resource groups 
+
+<img src="rsg.png">
+
+
