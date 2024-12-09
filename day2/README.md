@@ -46,3 +46,8 @@ ec2-user
              ├─3568 /usr/sbin/httpd -DFOREGROUND
 
 ```
+
+## Overall parameters of testing in cloud ENV 
+
+<img src="cloud1.png">
+
