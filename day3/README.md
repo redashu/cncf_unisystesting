@@ -329,4 +329,8 @@ ansible [core 2.15.3]
 
   <img src="play11.png">
 
+  ### ansible required details understanding 
+
+  <img src="conn.png">
+
   
