@@ -333,4 +333,53 @@ ansible [core 2.15.3]
 
   <img src="conn.png">
 
-  
+  ### always keep your private key secure 
+
+  ```
+  chmod  400 splunk-key.pem 
+  ```
+
+  ### pinging db group using ansible 
+
+  ```
+  ansible  -u ec2-user --private-key splunk-key.pem  -i hosts  db  -m ping 
+[WARNING]: Platform linux on host 54.87.163.211 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of
+another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-
+core/2.15/reference_appendices/interpreter_discovery.html for more information.
+54.87.163.211 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.9"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+[WARNING]: Platform linux on host 3.95.172.207 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of
+another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-
+core/2.15/reference_appendices/interpreter_discovery.html for more information.
+3.95.172.207 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.9"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+
+```
+
+
+### ansible command 
+
+```
+  21  ansible  -u ec2-user --private-key splunk-key.pem    db  -m ping 
+   22  hitor
+   23  history 
+   24  pwd
+   25  ansible  -u ec2-user    db  -m ping 
+   26  ansible  -u ec2-user --private-key splunk-key.pem    db  -m ping 
+   27  ansible   --private-key splunk-key.pem    db  -m ping 
+   28  ansible   --private-key splunk-key.pem   webapp  -m ping
+   29  ansible   --private-key splunk-key.pem    db  -m ping 
+   30  ansible   --private-key splunk-key.pem   webapp  -m ping
+   31  ansible   --private-key splunk-key.pem   all   -m ping
+
+```
