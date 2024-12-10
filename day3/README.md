@@ -254,3 +254,19 @@ ashu-vm-publicIP = "54.226.63.221"
 [click_here](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli)
 
 
+### checking azure cli version 
+
+```
+
+PS C:\Users\azureuser> az version
+{
+  "azure-cli": "2.67.0",
+  "azure-cli-core": "2.67.0",
+  "azure-cli-telemetry": "1.1.0",
+  "extensions": {}
+}
+PS C:\Users\azureuser>
+
+
+```
+
