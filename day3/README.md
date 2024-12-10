@@ -249,3 +249,8 @@ ashu-vm-publicIP = "54.226.63.221"
 
 ```
 
+### auzre cli link for windows 
+
+[click_here](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli)
+
+
