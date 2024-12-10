@@ -219,3 +219,8 @@ Terraform will perform the following actions:
       - associate_public_ip_address          = true -> null
 
 ```
+
+### Terraform generic life cycle 
+
+<img src="lifecc.png">
+
