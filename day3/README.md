@@ -270,3 +270,63 @@ PS C:\Users\azureuser>
 
 ```
 
+## INtroduction to Infra & resources config management system 
+
+### info about ANsible 
+
+<img src="ansible.png">
+
+### inventory in ansible 
+
+<img src="inv.png">
+
+### playbook in ansible -- is script to setup / check things on target resouces 
+
+<img src="play1.png">
+
+### test jump server from your local system connection 
+
+```
+ ssh  ashu@18.233.26.50
+The authenticity of host '18.233.26.50 (18.233.26.50)' can't be established.
+ED25519 key fingerprint is SHA256:DiMsfJwLk4XWyQ+mRxHiHLSf79jeWswtOFfs2qZNd7Y.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '18.233.26.50' (ED25519) to the list of known hosts.
+ashu@18.233.26.50's password:
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+[ashu@common-server ~]$
+
+
+```
+
+### checking ansible version 
+
+```
+ ansible --version 
+ansible [core 2.15.3]
+  config file = None
+  configured module search path = ['/home/ashu/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3.9/site-packages/ansible
+  ansible collection location = /home/ashu/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible
+  python version = 3.9.16 (main, Jul  5 2024, 00:00:00) [GCC 11.4.1 20230605 (Red Hat 11.4.1-2)] (/usr/bin/python3.9)
+  jinja version = 3.1.4
+  libyaml = True
+
+  ```
+
+  ## ansible vs terraform 
+
+  <img src="play11.png">
+
+  
