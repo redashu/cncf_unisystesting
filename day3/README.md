@@ -239,3 +239,13 @@ AWS Secret Access Key [None]: ^Z
 
 
 ```
+
+### to check terraform output data 
+
+```
+PS C:\Users\azureuser\Desktop\terraform_codes> terraform.exe  output     
+ashu-vm-id = "i-05afa0570a0d99b5e"
+ashu-vm-publicIP = "54.226.63.221"
+
+```
+
