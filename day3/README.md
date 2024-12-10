@@ -383,3 +383,8 @@ core/2.15/reference_appendices/interpreter_discovery.html for more information.
    31  ansible   --private-key splunk-key.pem   all   -m ping
 
 ```
+
+## Introduction to apache Jmeter (Load/Performance testing tool)
+
+<img src="jm1.png">
+
