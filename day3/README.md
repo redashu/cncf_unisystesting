@@ -224,3 +224,18 @@ Terraform will perform the following actions:
 
 <img src="lifecc.png">
 
+### aws cli configure 
+
+```
+ aws --version 
+aws-cli/2.22.12 Python/3.12.6 Windows/10 exe/AMD64
+
+PS C:\Users\azureuser\Desktop\terraform_codes> 
+
+PS C:\Users\azureuser\Desktop\terraform_codes> aws  configure 
+AWS Access Key ID [None]: ^V
+AWS Secret Access Key [None]: ^Z
+
+
+
+```
