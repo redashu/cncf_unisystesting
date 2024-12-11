@@ -139,3 +139,16 @@ CONTAINER ID   IMAGE              COMMAND                  CREATED         STATU
 [ashu@common-server ansible_codes]$ 
 
 ```
+
+### Time to understanding integration and collabration of multi skill / teams under 
+
+<img src="teams.png">
+
+### Introduction to jenkins 
+
+<img src="jk1.png">
+
+### bit more clarity about jenkins automation 
+
+<img src="jk2.png">
+
