@@ -1,0 +1,17 @@
+---
+- host: webapp
+  become: true 
+  tasks:
+  - name: installing httpd software
+    yum:
+     name: httpd
+     state: present 
+  - name: copy webapp to server
+    copy: 
+     src: ashu.html
+     dest: /var/www/html/
+
+  - name: start service of httpd
+    service:
+     name: httpd
+     state: started 
