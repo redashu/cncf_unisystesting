@@ -69,5 +69,18 @@ pipeline {
                 sh 'kubectl get deployment'
             }
         }
+        // loadtesting of app using jmeter 
+        stage('jmeter'){
+            steps {
+                sh 'rm -rf ashuresults.jtl ashureport &>/dev/null'
+                echo 'checking jmeter version'
+                sh '/opt/jmeter/bin/jmeter  --version'
+                sh '/opt/jmeter/bin/jmeter   -n -t ashudmeoblazenew.jmx  -l  ashuresults.jtl -L DEBUG -e  -o ashureport'
+                sh 'ls ashureport'
+                sh 'mkdir -p /var/www/html/ashu/'
+                sh 'cp -rf ashureport/*  /var/www/html/ashu/'
+            }
+
+        }
     }
 }

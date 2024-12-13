@@ -49,3 +49,11 @@
 
 <img src="k8s4.png">
 
+## Intro to Dynatrace 
+
+<img src="dyna1.png">
+
+### Jmeter with jenkins 
+
+<img src="jmt.png">
+
