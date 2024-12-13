@@ -21,5 +21,18 @@ pipeline {
                 sh 'docker images | grep -i ashuselenium'
             }
         }
+        // selenium prerequiste 
+        stage('selenium prerequsite test'){
+            steps {
+                echo 'checking google chrome version'
+                sh 'google-chrome   --version'
+                echo 'checking chromedriver version'
+                sh 'chromedriver --version'
+                echo 'location of chromedriver to use in python code'
+                sh 'which chromedriver'
+            }
+
+        }
+        // running python selenium in headless mode 
     }
 }
