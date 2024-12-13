@@ -60,5 +60,14 @@ pipeline {
                 sh 'kubectl get nodes'
             }
         }
+        // deploy sample app in aks using manifest
+        stage('deploy to AKS'){
+            steps {
+                echo 'deploying yaml manifest'
+                sh 'kubectl apply -f k8sapp.yaml'
+                echo 'validate deployment'
+                sh 'kubectl get deployment'
+            }
+        }
     }
 }
