@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('install_connection_verify') {
+            steps {
+                echo 'Hello World'
+                sh 'java --version'
+                sh 'python3 -V'
+                sh 'docker version'
+                git branch: 'master' , url: 'https://github.com/redashu/ashu-unisys-cicd.git'
+                sh 'ls'
+            }
+        }
+        // docker build 
+        stage('building docker image'){
+            steps {
+                echo 'building docker image for selenium code'
+                sh 'ls'
+                sh 'docker build -t  ashuselenium:test2 . '
+                sh 'docker images | grep -i ashuselenium'
+            }
+        }
+    }
+}
