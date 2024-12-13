@@ -33,6 +33,23 @@ pipeline {
             }
 
         }
+        // doing SAST in selenium python code 
+        stage('using trivy scan in current code'){
+            steps {
+                echo 'checking trivy version'
+                sh 'trivy -version'
+                echo 'scanning the python code'
+                sh 'trivy fs  .'
+            }
+        }
         // running python selenium in headless mode 
+        stage('running selenium in headless mode'){
+            steps {
+                echo 'running python code for selenium headless'
+                sh 'python3 automate.py'
+                echo 'verify image png '
+                sh 'ls '
+            }
+        }
     }
 }
