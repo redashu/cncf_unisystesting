@@ -28,3 +28,24 @@
 
 <img src="sec1.png">
 
+### mono to micro 
+
+<img src="micro.png">
+
+
+### Understanding container management platform
+
+<img src="k8s1.png">
+
+### basic info about k8s 
+
+<img src="k8s2.png">
+
+### basic architecture of k8s 
+
+<img src="k8s3.png">
+
+### k8s master and slave archecture 
+
+<img src="k8s4.png">
+

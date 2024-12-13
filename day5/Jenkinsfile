@@ -51,5 +51,14 @@ pipeline {
                 sh 'ls '
             }
         }
+        // stage for testing itegration of jenkins with AKS (azure kubernetes service)
+        stage('testing aks connection'){
+            steps {
+                echo 'using kubectl tool to verify version of aks'
+                sh 'kubectl version -o yaml'
+                echo 'checking slave / worker nodes '
+                sh 'kubectl get nodes'
+            }
+        }
     }
 }
